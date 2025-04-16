@@ -48,7 +48,8 @@ public class MetodosBusqueda {
         int indexPersona = findPersonaByCode(codetoFind);
         if (indexPersona >= 0) {
             showConsole.showMessage("Persona encontrada");
-            showConsole.showMessage(people[indexPersona].toString());
+            //showConsole.showMessage(people[indexPersona].toString());
+            //→Podemos usar ek showConsole o sout para imprimir el indexPersona
             System.out.println(people[indexPersona]);
         } else {
             showConsole.showMessage("Persona con codigo" + codetoFind + "no encontrada");

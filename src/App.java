@@ -1,4 +1,5 @@
 import controllers.MetodosBusqueda;
+import controllers.MetodosBusquedaBinaria;
 import views.ShowConsole;
 import models.Persona;
 
@@ -16,19 +17,9 @@ public class App {
         personas[5] = new Persona(106, "Sofia");
         personas[6] = new Persona(107, "Pedro");
 
-        MetodosBusqueda mB = new MetodosBusqueda(personas);
+        //MetodosBusqueda mB = new MetodosBusqueda(personas);
 
-        /*int[] numeros = { 2, 5, 7, 3, 9, 4 };
-
-        int valorBuscado = 4;
-        consola.showMessage("Buscando el numero " + valorBuscado + "...");
-
-        int resultado = mB.busquedaLineal(numeros, valorBuscado);
-
-        if (resultado != -1) {
-            consola.showMessage("Numero encontrado en la posicion: " + resultado);
-        } else {
-            consola.showMessage("El numero no fue encontrado.");
-        }*/
+        MetodosBusquedaBinaria mBB = new MetodosBusquedaBinaria(personas);
+        mBB.showPersonByCode();
     }
 }

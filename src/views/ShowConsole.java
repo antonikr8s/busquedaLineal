@@ -1,3 +1,4 @@
+
 package views;
 
 import java.util.Scanner;
@@ -7,11 +8,11 @@ public class ShowConsole {
     private Scanner scanner = new Scanner(System.in);
 
     public void showMenu() {
-        System.out.println("MEtodo Busqueda: ");
+        System.out.println("Metodo Busqueda: ");
     }
 
     public int getCode() {
-        System.out.println("Ingrese codigo: ");
+        System.out.print("Ingrese codigo: ");
         int codigo = scanner.nextInt();
         System.out.println("Codigo ingresado: " + codigo);
         return codigo;
